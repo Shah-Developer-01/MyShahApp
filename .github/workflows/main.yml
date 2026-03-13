@@ -14,10 +14,7 @@ jobs:
           pip3 install --user --upgrade buildozer cython virtualenv
 
       - name: Build with Buildozer
-        run: |
-          export PATH=$PATH:~/.local/bin
-                - name: Build with Buildozer
-        run: |
+        run: 
           export PATH=$PATH:~/.local/bin
           yes | buildozer android debug
 
