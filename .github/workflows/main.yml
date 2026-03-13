@@ -14,7 +14,12 @@ jobs:
           pip3 install --user --upgrade buildozer cython virtualenv
 
       - name: Build with Buildozer
-        run: 
+        run: |
           export PATH=$PATH:~/.local/bin
           yes | buildozer android debug
 
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: ShahApp-Final
+          path: bin/*.apk
