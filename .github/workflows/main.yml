@@ -20,3 +20,4 @@ jobs:
         with:
           name: A-App-Final
           path: bin/*.apk
+
