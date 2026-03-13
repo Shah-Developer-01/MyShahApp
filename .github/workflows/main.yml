@@ -16,4 +16,8 @@ jobs:
       - name: Build with Buildozer
         run: |
           export PATH=$PATH:~/.local/bin
-          buildozer android debug
+                - name: Build with Buildozer
+        run: |
+          export PATH=$PATH:~/.local/bin
+          yes | buildozer android debug
+
